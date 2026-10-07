@@ -295,7 +295,7 @@
   .rg-sw.rg-dot{border-radius:50%}
   .rg-sw.rg-line{height:3px;border-radius:2px}
   .rg-sw.rg-ink{background:var(--ink)}
-  .rg-drive{margin-top:40px;background:var(--soft);border-radius:var(--radius);padding:24px 28px}
+  .rg-drive{margin:0}
   .rg-drive h3{font-size:20px;line-height:1.4;margin:0 0 8px}
   .rg-drive p{margin:0;max-width:64ch;color:var(--text-2)}
   .rg-drive ol{margin:16px 0 0;padding-left:22px;display:flex;flex-direction:column;gap:6px;color:var(--text-2)}
@@ -363,7 +363,7 @@
   <ul>
     <li><a href="#overview">행사 개요</a></li>
     <li><a href="#program">프로그램</a></li>
-    <li><a href="#location">장소</a></li>
+    <li><a href="#location">행사장 안내</a></li>
     <li><a href="#schedule">11월 12일 일정</a></li>
     <li><a href="#contact">문의</a></li>
   </ul>
@@ -377,7 +377,7 @@
     <ol>
       <li><a href="#overview"><span>01</span>행사 개요</a></li>
       <li><a href="#program"><span>02</span>프로그램 한눈에 보기</a></li>
-      <li><a href="#location"><span>03</span>장소</a></li>
+      <li><a href="#location"><span>03</span>행사장 안내</a></li>
       <li><a href="#schedule"><span>04</span>11월 12일 일정</a></li>
       <li><a href="#contact"><span>05</span>문의</a></li>
     </ol>
@@ -422,7 +422,7 @@
 
   <!-- 03 LOCATION -->
   <section id="location">
-    <div class="sh"><div class="no">03</div><h2>장소</h2></div>
+    <div class="sh"><div class="no">03</div><h2>행사장 안내</h2></div>
     <dl class="kv">
       <div><dt>장소</dt><dd>코엑스 컨퍼런스룸 3층 · 4층</dd><span></span></div>
       <div><dt>주소</dt><dd>서울특별시 강남구 영동대로 513 (06164)</dd>
@@ -431,7 +431,6 @@
 
     <div class="rg">
 <div class="rg-head">
-    <p class="rg-eyebrow">Speaker Arrival Guide · The Stage</p>
     <h3 class="rg-title">코엑스 컨퍼런스룸(남) 4층 <span class="rg-room">401호</span> 찾아오시는 길</h3>
     <p class="rg-lede">코엑스 1층으로 들어오신 뒤 ‘컨퍼런스룸(남) 401–403’ 안내 표지판을 따라 4층으로 이동하시면 됩니다. 건물 외부에서는 동문 또는 남문2를 이용하면 찾기 편리합니다.</p>
     <dl class="rg-facts">
@@ -442,6 +441,10 @@
     </dl>
   </div>
 
+  <div class="rg-steps" aria-label="이동 단계">
+    <article class="rg-step">
+      <div class="rg-num">BY<b>CAR</b></div>
+      <div class="rg-body">
   <div class="rg-drive">
     <h3>차량으로 오시는 경우 · 주차 안내</h3>
     <p>차량으로 오신다면 <strong>코엑스 동문 GATE → B2 퍼플존 → 3번 출입구 → 4층 401호</strong> 동선이 가장 간단합니다.</p>
@@ -463,8 +466,9 @@
       <li>주차 관련 문의: 주차 고객 현장 지원실 02-6000-7514</li>
     </ul>
   </div>
+      </div>
+    </article>
 
-  <div class="rg-steps" aria-label="이동 단계">
     <article class="rg-step">
       <div class="rg-num">STEP<b>1</b></div>
       <div class="rg-body">
