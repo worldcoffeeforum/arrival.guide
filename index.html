@@ -47,8 +47,10 @@
   .poster{margin:0;border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.08)}
   .poster img{width:100%}
   .eyebrow{font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--green-text);margin-bottom:18px}
-  .role-tag{display:inline-flex;align-items:center;gap:8px;margin:0 0 4px;padding:7px 16px;border-radius:999px;background:var(--green);color:var(--ink);font-size:15px;font-weight:700;letter-spacing:.01em;line-height:1.3}
-  .role-tag::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--ink)}
+  .eyebrow-row{display:flex;align-items:center;flex-wrap:wrap;gap:8px 12px;margin-bottom:18px}
+  .eyebrow-row .eyebrow{margin-bottom:0}
+  .role-tag{display:inline-flex;align-items:center;gap:7px;padding:4px 12px;border-radius:999px;background:var(--green);color:var(--ink);font-size:13px;font-weight:700;letter-spacing:.01em;line-height:1.3}
+  .role-tag::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--ink)}
   .hero h1{font-size:48px;line-height:1.18;font-weight:700;letter-spacing:-.025em;margin:0 0 20px}
   .hero .sub{font-size:18px;color:var(--text-2);max-width:620px}
   .meta{display:grid;grid-template-columns:repeat(4,1fr);margin-top:56px;border-top:1px solid var(--line)}
@@ -460,9 +462,8 @@
 <div class="hero">
   <div class="page">
     <div>
-      <div class="eyebrow">제15회 월드커피포럼</div>
+      <div class="eyebrow-row"><div class="eyebrow">제15회 월드커피포럼</div><div class="role-tag">The Stage</div></div>
       <h1>Speaker Arrival Guide</h1>
-      <div class="role-tag">The Stage</div>
       <dl class="meta">
         <div><dt>일정</dt><dd>2026. 11. 11 – 14</dd></div>
         <div><dt>장소</dt><dd>코엑스, 서울, 대한민국</dd></div>
