@@ -380,19 +380,12 @@
   .pb-d span{display:block}
   .pb-d span+span{margin-top:6px}
   .pb-d em{display:block;font-style:normal;font-weight:600}
-  .pb-pat{position:absolute;left:0;right:0;bottom:0;height:40%}
   .k-stage{--c:#96C263;--p:rgba(26,26,26,.85)}
   .k-sess{--c:#F0864C;--p:rgba(255,255,255,.55)}
   .k-orig{--c:#6E6FB2;--t:#fff;--p:rgba(255,255,255,.55)}
   .k-champ{--c:#FFE373;--p:rgba(26,26,26,.85)}
   .k-sca{--c:#25A3D5;--t:#fff;--p:rgba(255,255,255,.55)}
   .k-gala{--c:#E5484D;--t:#fff;--p:rgba(255,255,255,.5)}
-  .k-stage .pb-pat{background:repeating-linear-gradient(0deg,var(--p) 0 4px,transparent 4px 9px)}
-  .k-sess .pb-pat{background:repeating-linear-gradient(135deg,var(--p) 0 9px,transparent 9px 18px)}
-  .k-orig .pb-pat{background:repeating-radial-gradient(circle at 100% 50%,var(--p) 0 4px,transparent 4px 9px)}
-  .k-champ .pb-pat{background:radial-gradient(circle at 50% 100%,var(--p) 0 34%,transparent 35%),radial-gradient(circle at 50% 100%,transparent 0 46%,var(--p) 47% 56%,transparent 57%)}
-  .k-sca .pb-pat{background:repeating-linear-gradient(90deg,var(--p) 0 3px,transparent 3px 8px)}
-  .k-gala .pb-pat{background:radial-gradient(circle,var(--p) 0 3.5px,transparent 4px) 0 0/14px 14px}
   .tabs{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line);margin-bottom:4px}
   .tabs button{font:inherit;border:0;background:none;padding:10px 0 12px;cursor:pointer;display:flex;flex-direction:column;align-items:center;gap:1px;color:var(--muted);border-bottom:2px solid transparent;margin-bottom:-1px}
   .tabs b{font-size:16px;font-weight:600;font-variant-numeric:tabular-nums}
@@ -455,6 +448,9 @@
   .lang a:hover{color:var(--text)}
   .lang a[aria-current]{background:var(--ink);color:#fff}
   @media (max-width:560px){.tb-r .doc{display:none}}
+  /* ---------- program tiles: solid color only (no pattern) ---------- */
+  .pbg .pb{aspect-ratio:auto!important;padding-bottom:18px}
+  @media (max-width:560px){.pbg .pb{padding-bottom:12px}}
 </style>
 </head>
 <body>
@@ -539,12 +535,12 @@
     <div class="vt" role="tablist" aria-label="보기 방식"><button role="tab" data-v="prog" aria-selected="true">프로그램 보기</button><button role="tab" data-v="tt" aria-selected="false">타임테이블 보기</button></div>
     <div class="vp" data-v="prog">
     <div class="pbg" role="list" aria-label="프로그램">
-      <div class="pb k-stage me" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#401</span></span><span class="pb-t">The Stage</span><span class="pb-d"><span><em>11.12 (목)</em>10:00–18:30</span></span><i class="pb-pat"></i></div>
-      <div class="pb k-sess" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#301</span></span><span class="pb-t">The Sessions</span><span class="pb-d"><span><em>11.11 (수)</em>13:00–17:30</span><span><em>11.12–13 (목·금)</em>10:30–17:30</span><span><em>11.14 (토)</em>10:30–15:00</span></span><i class="pb-pat"></i></div>
-      <div class="pb k-orig" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#300</span></span><span class="pb-t">Origin Discovery</span><span class="pb-d"><span><em>11.11–12 (수·목)</em>10:30–18:00</span></span><i class="pb-pat"></i></div>
-      <div class="pb k-champ" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#318</span></span><span class="pb-t">Champion Live</span><span class="pb-d"><span><em>11.14 (토)</em>10:30–15:30</span></span><i class="pb-pat"></i></div>
-      <div class="pb k-sca" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#317</span></span><span class="pb-t">SCA Education</span><span class="pb-d"><span><em>11.12 (목)</em>10:00–19:00</span><span><em>11.13 (금)</em>10:00–17:00</span><span><em>11.14 (토)</em>10:00–13:30</span></span><i class="pb-pat"></i></div>
-      <div class="pb k-gala" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#401·402</span></span><span class="pb-t">AP100BCS</span><span class="pb-d"><span><em>11.12 (목)</em></span><span><em>GALA · #401</em>17:00–18:30</span><span><em>Reception · #402</em>19:00–20:30</span></span><i class="pb-pat"></i></div>
+      <div class="pb k-stage me" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#401</span></span><span class="pb-t">The Stage</span><span class="pb-d"><span><em>11.12 (목)</em>10:00–18:30</span></span></div>
+      <div class="pb k-sess" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#301</span></span><span class="pb-t">The Sessions</span><span class="pb-d"><span><em>11.11 (수)</em>13:00–17:30</span><span><em>11.12–13 (목·금)</em>10:30–17:30</span><span><em>11.14 (토)</em>10:30–15:00</span></span></div>
+      <div class="pb k-orig" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#300</span></span><span class="pb-t">Origin Discovery</span><span class="pb-d"><span><em>11.11–12 (수·목)</em>10:30–18:00</span></span></div>
+      <div class="pb k-champ" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#318</span></span><span class="pb-t">Champion Live</span><span class="pb-d"><span><em>11.14 (토)</em>10:30–15:30</span></span></div>
+      <div class="pb k-sca" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#317</span></span><span class="pb-t">SCA Education</span><span class="pb-d"><span><em>11.12 (목)</em>10:00–19:00</span><span><em>11.13 (금)</em>10:00–17:00</span><span><em>11.14 (토)</em>10:00–13:30</span></span></div>
+      <div class="pb k-gala" role="listitem"><span class="pb-hd"><span>WCF 2026</span><span>#401·402</span></span><span class="pb-t">AP100BCS</span><span class="pb-d"><span><em>11.12 (목)</em></span><span><em>GALA · #401</em>17:00–18:30</span><span><em>Reception · #402</em>19:00–20:30</span></span></div>
     </div>
     </div>
     <div class="vp" data-v="tt" hidden>
